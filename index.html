@@ -82,7 +82,7 @@
 
     <section class="container">
 
-        <!-- Quienes somos -->
+        <!-- Quienes somos // TOOLTIP APLICADO A LOS ICONOS -->
 
         <div id="section1" class="d-none d-lg-block">
             <div class="row ">
@@ -92,7 +92,7 @@
             </div>
             <div class="row my-5 ">
                 <div class="col-4">
-                    <i class="fa-solid fa-plane w-100"></i>
+                    <i class="fa-solid fa-plane w-100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Planifiquemos un viaje!"  ></i>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nobis sequi? Illum, asperiores
                         non totam, nam unde consectetur excepturi, libero magni architecto reiciendis consequatur. Nihil
                         doloremque molestiae delectus quidem in.
@@ -121,10 +121,10 @@
                         dolorum! Rerum maiores sequi fugiat! Atque quod unde maiores ea et corporis similique aliquam
                         eos vero, temporibus molestias.
                     </p>
-                    <i class="fa-solid fa-mountain w-100"></i>
+                    <i class="fa-solid fa-mountain w-100" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Las mejores zonas para acampar!"></i>
                 </div>
                 <div class="col-4">
-                    <i class="fa-solid fa-route w-100"></i>
+                    <i class="fa-solid fa-route w-100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Te acompaño en tu ruta!"></i>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nobis sequi? Illum, asperiores
                         non totam, nam unde consectetur excepturi, libero magni architecto reiciendis consequatur. Nihil
                         doloremque molestiae delectus quidem in.
@@ -230,8 +230,10 @@
                                     rows="10"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        
                     </form>
+                    <!-- Saqué el botón del formulario para evitar el envío y visualizar el popover -->
+                    <button type="btn" class="btn btn-primary" data-bs-toggle="popover" data-bs-content="Tu mensaje de contacto ha sido enviado!">Enviar</button>
                 </div>
             </div>
         </div>
@@ -243,13 +245,13 @@
     <footer class="container-fluid mt-5">
         <div class="row justify-content-between">
             <div class="col-lg-6 col-sm-12 textfooter text-center">
-                <h2>VIAJES CHILE</h2>
+                <a href="/" class="text-reset text-decoration-none"><h2 class="mt-1">VIAJES CHILE</h2></a>
             </div>
             <div class="col-lg-6 col-sm-12 iconsfooter text-center py-2">
-                <i class="fa-brands fa-github fa-2xl mx-2 mt-3"></i>
-                <i class="fa-brands fa-linkedin fa-2xl mx-2 mt-3"></i>
-                <i class="fa-brands fa-twitter fa-2xl mx-2 mt-3"></i>
-                <i class="fa-brands fa-facebook fa-2xl mx-2 mt-3"></i>
+                <a href="https://github.com/Signasho" target="_blank"><i class="fa-brands fa-github fa-2xl mx-2 mt-3 text-white"></i></a>
+                <a href="https://www.linkedin.com/school/desafiolatam/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl mx-2 mt-3 text-white"></i></a>
+                <a href="https://twitter.com/DesafioLatam" target="_blank"><i class="fa-brands fa-twitter fa-2xl mx-2 mt-3 text-white"></i></a>
+                <a href="https://web.facebook.com/DesafioLatam?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook fa-2xl mx-2 mt-3 text-white"></i></a>
             </div>
 
 
